@@ -401,8 +401,9 @@
                 await LogHandler.LogMessage($"Users load error\n{e}", LogSeverity.Error);
             }
 
-            File.WriteAllText(Path.Combine(AppContext.BaseDirectory, $"setup/{DateTime.UtcNow.Ticks} {Context.Guild.Id}.json"), JsonConvert.SerializeObject(newObject, Formatting.Indented));
-            await LogHandler.LogMessage($"Saving {Context.Guild.Name} Complete");
+            var fileName = $"{DateTime.UtcNow.Ticks} {Context.Guild.Id}.json";
+            File.WriteAllText(Path.Combine(AppContext.BaseDirectory, $"setup/{fileName}"), JsonConvert.SerializeObject(newObject, Formatting.Indented));
+            await LogHandler.LogMessage($"Saving {Context.Guild.Name} Complete || file: {fileName}");
         }
     }
 }
