@@ -1,5 +1,5 @@
 # ServerSaverSelf
-A Discord SelfBot for generating server configs for Cloner => https://discordapp.com/oauth2/authorize?client_id=462625105231609857&scope=bot&permissions=2146958591
+A Discord SelfBot for generating server configs for Cloner => https://discordapp.com/oauth2/authorize?client_id=500791607839162376&scope=bot&permissions=2146958591
 
 # How To
 Download the release, and run the exe (or file for your platform)
