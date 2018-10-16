@@ -290,7 +290,7 @@
                 x =>
                     {
                         var channelPermissions = (Context.User as IGuildUser).GetPermissions(x);
-                        if (!channelPermissions.ViewChannel)
+                        if (!channelPermissions.Connect)
                         {
                             LogHandler.LogMessage($"Skipped {x.Name}, Insufficient Permissions", LogSeverity.Warning);
                             return false;
